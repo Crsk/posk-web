@@ -1,0 +1,148 @@
+<app-navbar (boolEvent)="receiveBool($event)"></app-navbar>
+<mat-drawer-container autosize>
+  <mat-drawer #sidenav class="example-sidenav" mode="side">
+    <div id="side-content">
+      <p class="pt-6">
+        <button mat-button routerLink="." (click)="deniedMsg()">Ventas</button>
+      </p>
+      <p>
+        <button mat-button routerLink="." (click)="deniedMsg()">Jornadas</button>
+      </p>
+      <p>
+        <button mat-button routerLink="." (click)="deniedMsg()">Reportes</button>
+      </p>
+      <p>
+        <button mat-button routerLink="." (click)="deniedMsg()">Estadísticas</button>
+      </p>
+    </div>
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <h1 class="text-light" id="title">Toma el control</h1>
+    <img id="bg-image">
+  </div>
+  <section id="sec-1">
+    <div class="container-fluid pt-4 pb-2 text-center">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 pt-6 pb-6">
+          <div class="col-12">
+            <img src="../assets/icons/pie-chart.svg" alt="pie chart" height="100">
+          </div>
+          <div class="col-12 pt-3">
+            <h4>
+              Administra
+            </h4>
+          </div>
+          <div class="col-12 pt-1">
+            <p class="paragraph">Administra, asigna roles y analiza desempeño</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 pt-6">
+          <div class="col-12">
+            <img src="../assets/icons/checked.svg" alt="pie chart" height="100">
+          </div>
+          <div class="col-12 pt-3">
+            <h4>
+              Controla
+            </h4>
+          </div>
+          <div class="col-12 pt-1">
+            <p class="paragraph">Registra y controla las entradas y salidas de stock</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 pt-6">
+          <div class="col-12">
+            <img src="../assets/icons/sale.svg" alt="pie chart" height="100">
+          </div>
+          <div class="col-12 pt-3">
+            <h4>
+              Vende
+            </h4>
+          </div>
+          <div class="col-12 pt-1">
+            <p class="paragraph">Organiza stock y vende fácilmente</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-simple">
+    <div class="container pt-5 pb-5 text-center">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img src="../assets/images/notebook-1.png" alt="interfaz" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h1>Simple</h1>
+          <p class="paragraph">
+            Fácil de usar, el tiempo es muy valioso!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-potente">
+    <div class="container pt-5 pb-5 text-center">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1>Potente</h1>
+          <p class="paragraph">
+            Quitemos el ruido, hagamos que sea simple y potente!
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="../assets/images/notebook-1.png" alt="interfaz" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sec-moderno">
+    <div class="container pt-5 pb-5 text-center">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <img src="../assets/images/notebook-1.png" alt="interfaz" class="img-fluid">
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h1>Moderno</h1>
+          <p class="paragraph">
+            Quitemos el ruido, hagamos que sea simple y potente!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sec-contacto">
+    <div class="container pt-5 pb-5 text-center">
+      <h1 class="pb-4">¡Vamos a conocernos!</h1>
+      <form>
+        <div class="col-sm-12 col-md-5 center">
+          <div class="form-group">
+            <label for="exampleInputEmail1">¿Como pordemos contactarte?</label>
+            <input type="email" class="form-control borderless" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="E-mail">
+          </div>
+          <div class="form-group pt-3">
+            <label for="exampleInputPassword1">¿Como podemos ayudarte?</label>
+            <textarea class="form-control borderless" id="exampleInputPassword1" rows="2" placeholder="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-light btn-lg"><i class="fa fa-send fa-2x"></i></button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container pt-5 pb-6 text-center">
+      <span class="text-light">posk 2018 copyright &copy;</span>
+      <a href="https://www.youtube.com/channel/UC0ZqsuSFsw6mwv0zZXATtcg/videos" target="new">
+        <button mat-icon-button>
+          <i class="fa fa-youtube icon fa-2x"></i>
+        </button>
+      </a>
+    </div>
+  </footer>
+</mat-drawer-container>

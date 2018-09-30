@@ -1,0 +1,18 @@
+mat-toolbar {
+    position: fixed;
+    z-index: 100;
+}
+
+.right {
+    position: absolute;
+    right: 1em;
+    top: 0.9em;
+}
+
+#btn-menu {
+    margin-bottom: 2px;
+}
+
+button:focus, button:active {
+    outline: none;
+}

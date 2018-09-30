@@ -1,0 +1,70 @@
+#side-content {
+    position: fixed;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+    width: 130px;
+}
+
+#bg-image {
+    background-image: url("../assets/images/pos.jpg");
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;    
+}
+
+#title {
+    font-family: 'Caveat', cursive;
+}
+
+#sec-simple {
+    background-color: white;
+}
+#sec-potente {
+    background-color: none;
+}
+#sec-moderno {
+    background-color: white;    
+}
+#sec-contacto {
+    background-color: none;
+}
+
+.paragraph {
+    font-size: 1.4em;
+}
+
+.borderless {
+    outline: none;
+    border: 0px solid;
+}
+
+footer {
+    background-color: #282828;
+}
+
+.icon {
+
+    color: whitesmoke;
+}
+
+button:focus, button:active {
+    outline: none;
+}
