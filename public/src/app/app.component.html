@@ -118,16 +118,16 @@
   <section id="sec-contacto">
     <div class="container pt-5 pb-5 text-center">
       <h1 class="pb-4">¡Vamos a conocernos!</h1>
-      <form>
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="col-sm-12 col-md-5 center">
           <div class="form-group">
-            <label for="exampleInputEmail1">¿Como pordemos contactarte?</label>
-            <input type="email" class="form-control borderless" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="E-mail">
+            <label for="email">¿Como pordemos contactarte?</label>
+            <input type="email" class="form-control borderless" id="email" aria-describedby="email"
+              placeholder="E-mail" name="email" ngModel>
           </div>
           <div class="form-group pt-3">
-            <label for="exampleInputPassword1">¿Como podemos ayudarte?</label>
-            <textarea class="form-control borderless" id="exampleInputPassword1" rows="2" placeholder="Mensaje"></textarea>
+            <label for="message">¿Como podemos ayudarte?</label>
+            <textarea class="form-control borderless" id="message" rows="2" placeholder="Mensaje" name="message" ngModel></textarea>
           </div>
           <button type="submit" class="btn btn-light btn-lg"><i class="fa fa-send fa-2x"></i></button>
         </div>
